@@ -1,0 +1,28 @@
+body{
+	height: 100%;
+}
+
+.nav-text{
+	font-weight: bold;
+}
+
+.header-bg{
+	background-image: url("./images/bg.jpg");
+	height: 100%;
+	margin-top: -22px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-me{
+	height: 100%;
+	font-family: 
+}
