@@ -24,7 +24,7 @@ body{
 
 .about-me{
 	height: 100%;
-	width: 60%;
+	width: 80%;
 	margin: 0px auto;
 	text-align: center;
 	line-height: 1.5em;
@@ -45,7 +45,6 @@ body{
 }
 
 .about-content{
-	/*font-family: Open Sans,'Helvetica','Arial',sans-serif;*/
 	font-family: 'Josefin Sans', sans-serif;
 	color:#6f6f6f;
 	padding-top: 4%;
@@ -85,11 +84,11 @@ a:active{
 }
 
 .contact-text-design{
-
+	font-size: 24px;
 }
 
 .contact-content-design{
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Courgette', cursive;
 	font-size: 24px;
 }
 
@@ -101,6 +100,6 @@ a:active{
 	padding-bottom: 5%;
 }
 
-/*.footer-first-section{
-	padding-bottom: 12px;
-}*/
+.glyphicon .glyphicon-envelope{
+	font-size: 70px !important;
+}
