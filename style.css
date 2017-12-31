@@ -23,7 +23,7 @@ body{
 }
 
 .about-me{
-	height: 100%;
+	height: auto;
 	width: 80%;
 	margin: 0px auto;
 	text-align: center;
@@ -47,6 +47,7 @@ body{
 .about-content{
 	font-family: 'Josefin Sans', sans-serif;
 	color:#6f6f6f;
+	height: auto;
 	padding-top: 4%;
 	text-align: justify;
 }
