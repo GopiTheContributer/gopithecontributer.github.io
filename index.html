@@ -2,12 +2,17 @@
 <html lang="en">	
 	<HEAD>
 		<TITLE>TechCreators</TITLE>
+		
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Courgette|Josefin+Sans" rel="stylesheet">
+
+		<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+  		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Courgette|Josefin+Sans|EB+Garamond" rel="stylesheet">
   		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</HEAD>
@@ -21,6 +26,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>                       
 		      </button>
+		      <img class="logo" src="./images/logo.png"  />
  			 <a style="font-family:'Berkshire Swash', cursive; font-size:1.85em; font-weight:bold; color:#fff !important;" class="navbar-brand" href="#">TechCreators</a>
 		    </div>
 		    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
@@ -33,12 +39,14 @@
 		  </div>
 		</nav>
 		<!-- navbar ends -->
+		
 		<SECTION>
 			<a href="" id="home"></a>
 			<!-- Header image section -->
 			<div class="img-responsive">
 				<div class="header-bg" style="color:#fff;">
-					<DIV class="centered typed-text typed-text--cursor" id="loadContent">Fill Content here through javascripts</DIV>	
+					<DIV class="centered typed-text typed-text--cursor" id="loadContent" style="font-family:'EB Garamond', serif;font-size:38px;">Who am I?</DIV>	
+					<DIV style="color:#fff;padding:145px;">Know more about me</DIV>
 				</div>
 			</div>
 			<!-- header image end section -->
@@ -55,13 +63,14 @@
 					<DIV class="about-content">Hope everyone doing good. Myself <span>Gopi</span> working as a software developer in an US based MNC. I do visit colleges/universities to train students technically for interviews. I do provide students with online mentoring as well. 
 					
                     <div class="social-icon text-center">
-<a class="social-icon-design-about" href="https://www.facebook.com/gopi.p.102" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>                         <a class="social-icon-design-about"
-href="https://twitter.com/Gopi_TMW" target="_blank"><i class="fa fa-twitter"
-aria-hidden="true"></i></a>                         <a class="social-icon-design-about"
-href="https://www.linkedin.com/in/gopi-p-90410553/" target="_blank"><i class="fa
-fa-linkedin" aria-hidden="true"></i></a>                     </div>
-
-					</DIV>
+						<a class="social-icon-design-about" href="https://www.facebook.com/gopi.p.102" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i></a>                         
+						<a class="social-icon-design-about" href="https://twitter.com/Gopi_TMW" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a class="social-icon-design-about" href="https://www.linkedin.com/in/gopi-p-90410553/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</DIV>
 			</div>
 			<!-- End of About section -->
 
@@ -80,7 +89,7 @@ fa-linkedin" aria-hidden="true"></i></a>                     </div>
 						<a class="social-icon-design" href="https://www.facebook.com/gopi.p.102" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						<a class="social-icon-design" href="https://twitter.com/Gopi_TMW" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						<a class="social-icon-design" href="https://www.linkedin.com/in/gopi-p-90410553/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					</div>
+					</div>l
 				</div>
 			</div>
 				<div>
@@ -103,8 +112,11 @@ fa-linkedin" aria-hidden="true"></i></a>                     </div>
 <SCRIPT TYPE="text/javascript">
  
  	$(document).ready(function(){
- 		var a = $('#loadContent').text();
- 		$('#loadContent').text("I'm a software developer");
+ 		//$('#loadContent').text("I'm a software developer");
+
+ 		setTimeout(function(){
+			$('#loadContent').text("I'm a software developer"); 			
+ 		},  2000);
 
  		$('#currentYear').text((new Date).getFullYear());
  	});
