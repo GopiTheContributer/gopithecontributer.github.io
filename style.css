@@ -147,7 +147,7 @@ a:active{
 @media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) {
 	.about-content	{
 		height: auto;
-		width: 100%;
+		width: 90%;
 		text-align: justify;
 	}
 }
@@ -155,7 +155,23 @@ a:active{
 @media screen and (device-width: 360px) and (device-height: 640px) and (orientation: landscape) {
 	.about-content	{
 		height: auto;
-		width: 100%;
+		width: 90%;
+		text-align: justify;
+	}
+}
+
+@media screen and (device-width: 960px) and (device-height: 600px) and (orientation: portrait) {
+	.about-content	{
+		height: auto;
+		width: 90%;
+		text-align: justify;
+	}
+}
+
+@media screen and (device-width: 960px) and (device-height: 600px) and (orientation: landscape) {
+	.about-content	{
+		height: auto;
+		width: 90%;
 		text-align: justify;
 	}
 }
