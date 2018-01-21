@@ -144,10 +144,18 @@ a:active{
 	float: left;
 }
 
-@media screen and (max-width: ) and (min-height: )  {
-	.about-me	{
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) {
+	.about-content	{
 		height: auto;
-		width: 80%;
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: landscape) {
+	.about-content	{
+		height: auto;
+		width: 100%;
 		text-align: justify;
 	}
 }
