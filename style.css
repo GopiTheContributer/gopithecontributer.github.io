@@ -145,5 +145,9 @@ a:active{
 }
 
 @media screen and (max-width: ) and (min-height: )  {
-	
+	.about-me	{
+		height: auto;
+		width: 80%;
+		text-align: justify;
+	}
 }
