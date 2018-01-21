@@ -46,7 +46,7 @@
 			<div class="img-responsive">
 				<div class="header-bg" style="color:#fff;">
 					<DIV class="centered typed-text typed-text--cursor" id="loadContent" style="font-family:'EB Garamond', serif;font-size:38px;">Who am I?</DIV>	
-					<DIV style="color:#fff;padding:145px;">Know more about me</DIV>
+					<!-- <DIV style="color:#fff;padding:145px;">Know more about me</DIV> -->
 				</div>
 			</div>
 			<!-- header image end section -->
@@ -60,7 +60,7 @@
 						<span class="about-text">About</span>
 					</div>
 				</DIV>
-					<DIV class="about-content">Hope everyone doing good. Myself <span style="font-style:italic;">Gopi</span> working as a software developer in an US based MNC. I do visit colleges/universities to train students technically for interviews. I do provide students with online mentoring as well. 
+					<DIV class="about-content">Hello everyone, I'm <span style="font-style:italic;">Gopi</span> a techie guy DXC Technology. Apart from my work, I do train students technically for their interviews  
 					
                     <div class="social-icon text-center">
 						<a class="social-icon-design-about" href="https://www.facebook.com/gopi.p.102" target="_blank">
@@ -112,16 +112,32 @@
 <SCRIPT TYPE="text/javascript">
  
  	$(document).ready(function(){
- 		//$('#loadContent').text("I'm a software developer");
 
- 		setTimeout(function(){
-			$('#loadContent').text("I'm a software developer"); 			
- 		},  2000);
+ 		setInterval(() => {
+ 			textChange()
+ 		}, 2000);
+		
 
  		$('#currentYear').text((new Date).getFullYear());
  	});
 
-</SCRIPT>
+ 	function textChange()
+ 	{
+ 		var myRoles = { 
+ 			1: "Software developer",
+ 			2: "Freelancer", 
+ 			3: "Tutor",
+ 			4: "Trainer",
+ 			5: "learner"
+ 		}
+
+		var randomNumber = Math.floor((Math.random() * 5) + 1);
+
+		$('#loadContent').text("I'm a " + myRoles[randomNumber]); 			
+		randomNumber = 0;
+ 	}
+
+ </SCRIPT>
 
 
 
